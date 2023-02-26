@@ -11,6 +11,7 @@
             _telefono = value.Replace(" ", "").Replace("-", "")
         End Set
     End Property
+
     Public Sub New()
         MyBase.New()
         _telefono = String.Empty
