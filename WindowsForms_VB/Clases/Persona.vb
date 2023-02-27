@@ -1,5 +1,7 @@
 ﻿Public Class Persona
     Protected _nombre As String
+    Protected _apPaterno As String
+    Protected _apMaterno As String
     Protected _fechaNacimiento As DateTime?
 
     Public Property Nombre As String
@@ -10,6 +12,23 @@
             _nombre = value
         End Set
     End Property
+    Public Property APPaterno As String
+        Get
+            Return _apPaterno
+        End Get
+        Set(ByVal value As String)
+            _apPaterno = value
+        End Set
+    End Property
+    Public Property APMaterno As String
+        Get
+            Return _apMaterno
+        End Get
+        Set(ByVal value As String)
+            _apMaterno = value
+        End Set
+    End Property
+
     Public Property FechaNacimiento As DateTime?
         Get
             Return _fechaNacimiento
